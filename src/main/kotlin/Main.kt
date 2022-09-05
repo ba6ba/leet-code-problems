@@ -1,7 +1,5 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val addTwoNumbers = AddTwoNumbers()
+    val resultNode = addTwoNumbers.add(MockData.getListNode1(), MockData.getListNode2())
+    println(resultNode)
 }
